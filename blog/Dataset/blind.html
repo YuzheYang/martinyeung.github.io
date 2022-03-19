@@ -28,11 +28,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     
     <!-- css -->
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="canonical" href="/">
 
-    <script src="../assets/js/theme.js"></script>
-    <script src="../assets/js/dark_mode.js"></script>
+    <script src="../../assets/js/theme.js"></script>
+    <script src="../../assets/js/dark_mode.js"></script>
 </head>
 
 <body class="fixed-top-nav ">
@@ -40,7 +40,6 @@
     <!-- Header -->
 
     <header>
-
     <!-- Nav Bar -->
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
@@ -59,12 +58,12 @@
 
           <!-- Other pages -->
           <li class="nav-item ">
-            <a class="nav-link" href="../index.html">
+            <a class="nav-link" href="../../index.html">
               Home
             </a>
         </li>
           <li class="nav-item ">
-              <a class="nav-link" href="blog.html">
+              <a class="nav-link" href="../blog.html">
                 Blog
               </a>
           </li>
@@ -92,49 +91,36 @@
 </header>
 
 <body>
-    
-<!-- define outlier -->
+    <!-- define outlier -->
 <div class="container mt-5">
-    <!-- paper list -->
-    <div class="news">
-    
-    <h2>Blog</h2>
+<!-- paper list -->
+<div class="news">
+
+    <h2>Blind Realistic Blur Assessment Based on Discrepancy Learning</h2>
+    <h6> Leida Li<sup>1</sup>, Yu Zhou<sup>2</sup>, Ke Gu<sup>3</sup>, Yuzhe Yang<sup>4</sup>, Yuming Fang<sup>5</sup></h6>
+    <h6><sup>1</sup>Xidian University <sup>2</sup>China University of Mining and Technology <sup>3</sup>Beijing University of Technology<br> <sup>4</sup>University of Southampton <sup>5</sup>Jiangxi University of Finance and Economics</h6>
     <hr>
-    <div class="table-responsive">
-    
-    <table class="table table-sm table-borderless">
-    <!-- add content -->
+    <div>
+    <b>Abstract</b>: Blur is one of the most common distortions that degrade natural images. This stimulates the blossom of sharpness assessment metrics. Existing sharpness metrics possess good performance for evaluating simulated blur, but are limited for the more common realistic blur that are introduced during image capture and processing in real life. To this end, we propose an effective Realistic Blur Assessment method (RBA) based on discrepancy learning. First, motivated by the fact that the distortion-free reference images are usually unavailable in practice, but the Human Visual System (HVS) can still accurately perceive image sharpness by quantifying the perceptual discrepancy between the distorted image and the hallucinated reference image in mind, we propose to train a discrepancy generation model to automatically generate the discrepancy map from the distorted image analogous to the HVS. This is achieved by using a deep neural network with rich training images. With the discrepancy map, two sharpness-aware features, i.e. sparse representation based entropy of primitive and content-guided variation of power, are then extracted to severally quantify spatial visual information amount and spectral power. Finally, the two features are integrated to produce the overall sharpness score. Extensive experiments demonstrate the superiority of the proposed method over the state-of-the-arts.
+    </div>
+    <hr>
+    <div>
+        <b>Bibliography</b><br>
+       If you find our work useful, please cite this paper, thank you!
+       <pre><code>
+@article{li2019blind,
+    title={Blind realistic blur assessment based on discrepancy learning},
+    author={Li, Leida and Zhou, Yu and Gu, Ke and Yang, Yuzhe and Fang, Yuming},
+    journal={IEEE Transactions on Circuits and Systems for Video Technology},
+    volume={30},
+    number={11},
+    pages={3859--3869},
+    year={2019},
+    publisher={IEEE}
+    }
+        </code></pre>           
+    </div>
 
-    <tr>
-      <th scope="row">Mar 17, 2022</th>
-      <td>
-      <a href="Dataset\blind.html">Blind Realistic Blur Assessment Based on Discrepancy Learning (IEEE TCSVT2019)</a>.
-      </td>
-      </tr>
-
-
-    <tr>
-      <th scope="row">Mar 17, 2022</th>
-      <td>
-      <a href="Dataset\distillation.html">Self-Distillation from the Last Mini-Batch for Consistency Regularization (CVPR2022)</a>.
-      </td>
-      </tr>
-
-    <tr>
-    <th scope="row">Mar 17, 2022</th>
-    <td>
-    <a href="Dataset\PARA.html">Personalized Image Aesthetics Assessment with Rich Attributes (CVPR2022)</a>.
-    </td>
-    </tr>
-    
-    <tr>
-    <th scope="row">Mar 16, 2022</th>
-    <td>
-    <a href="iaa\bibiaa.html">Image aesthetic assessment paper list (reference purpose only)</a>.
-    </td>
-    </tr>
-
-</div>
 <!-- Bootsrap & MDB scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
